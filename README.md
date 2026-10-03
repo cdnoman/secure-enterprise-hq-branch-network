@@ -80,3 +80,9 @@ Detailed architecture, configurations, addressing plans, verification results an
 ## Security Notice
 
 This project was created in an authorized virtual lab environment for learning, testing and professional demonstration. All addresses, configurations and credentials are lab-specific. No production credentials or confidential organizational information are included.
+
+
+
+## Troubleshooting Case Studies
+
+- [FortiGate Redundant Interface Active Member Causing Gateway Reachability Failure](troubleshooting/fortigate-redundant-interface-active-member-issue.md)
