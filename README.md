@@ -95,3 +95,57 @@ secure-enterprise-hq-branch-network/
 │   └── fortigate-redundant-interface-active-member-issue.md
 │
 └── README.md
+
+Documentation
+Architecture
+- [Network Architecture Overview](architecture/network-overview.md)
+- [Device Inventory](architecture/device-inventory.md)
+Troubleshooting Case Studies
+- [FortiGate Redundant Interface Active Member Causing Gateway Reachability Failure](troubleshooting/fortigate-redundant-interface-active-member-issue.md)
+Planned Documentation
+- VLAN segmentation plan
+- FortiGate HA configuration notes
+- IPsec VPN implementation notes
+- Firewall policy and NAT validation
+- HQ-to-Branch connectivity testing
+- Failover testing evidence
+- Sanitized topology diagrams
+- Configuration snippets
+Implementation Status
+Component	Status
+HQ and Branch Architecture	Implemented
+HQ FortiGate HA	Implemented
+VLAN and Trunk Configuration	Implemented — Verification in Progress
+Redundant Switch Connectivity	Implemented — Failover Testing Pending
+Branch Routed Infrastructure	Implemented
+Site-to-Site IPsec VPN	Implemented — Evidence Collection in Progress
+External AD/DHCP Connectivity	Implemented — Documentation in Progress
+Security Policy Validation	In Progress
+Final Failover Testing	Planned
+Monitoring and Hardening	Planned
+Final Documentation and Demo	Planned
+
+
+What This Lab Demonstrates
+This lab demonstrates practical understanding of:
+- Enterprise network design
+- Firewall deployment
+- High availability concepts
+- VLAN segmentation
+- Trunking and Layer 2 troubleshooting
+- Site-to-site VPN design
+- Firewall policy and NAT behavior
+- HQ-to-Branch connectivity
+- Real troubleshooting methodology
+- Documentation for professional portfolio presentation
+Security Notice
+This project was created in an authorized virtual lab environment for learning, testing, and professional demonstration.
+All addresses, configurations, and credentials are lab-specific. No production credentials or confidential organizational information are included.
+
+
+Author
+
+Nauman Ali
+Network Engineer  
+
+GitHub Profile
