@@ -1,5 +1,7 @@
 # Network Architecture Overview
 
+> This document describes the current architecture of the Secure Enterprise HQ-Branch Network Lab, including FortiGate HA, VLAN segmentation, switching redundancy, external AD/DHCP integration, branch design, and site-to-site IPsec connectivity.
+
 ## 1. Project Scenario
 
 This project represents a secure enterprise network consisting of a headquarters and a remote branch office.
@@ -152,3 +154,17 @@ The tunnel configuration exists on the firewalls. Final Phase 2 validation, prot
 | Security hardening | Planned |
 | Failover testing | Planned |
 | Monitoring integration | Planned |
+
+## 10. Next Documentation Items
+
+The following areas will be documented in separate files as the lab progresses:
+
+- Detailed VLAN segmentation plan
+- FortiGate HA configuration notes
+- HQ and Branch IPsec VPN validation
+- Firewall security policy design
+- NAT and route verification
+- Branch switching baseline
+- Failover testing evidence
+- Troubleshooting case studies
+- Sanitized topology diagrams
