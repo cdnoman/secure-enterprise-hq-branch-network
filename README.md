@@ -1,37 +1,42 @@
-# Secure Enterprise HQ–Branch Network
+# Secure Enterprise HQ-Branch Network Lab
 
-A practical enterprise network designed and implemented in EVE-NG to demonstrate secure connectivity between a headquarters and branch environment.
+A practical enterprise network lab designed and implemented in EVE-NG to demonstrate secure connectivity between a headquarters and branch environment.
 
-The project combines enterprise switching, FortiGate high availability, VLAN segmentation, routed infrastructure, site-to-site IPsec VPN, Active Directory integration, security policies, redundancy, and structured testing.
+This project focuses on enterprise switching, FortiGate firewall high availability, VLAN segmentation, routed infrastructure, site-to-site IPsec VPN, Active Directory/DHCP integration, firewall security policies, NAT, failover behavior, and structured troubleshooting documentation.
 
-> **Project Status:** Active Development  
+> Project Status: Active Development  
 > Current implementation is being documented and verified phase by phase.
+
+---
 
 ## Project Objectives
 
-- Design a realistic enterprise HQ and branch network.
-- Provide secure connectivity between both locations.
-- Implement FortiGate high availability at headquarters.
-- Segment departments and services using VLANs.
-- Build redundant switching paths.
-- Integrate external VMware-based Active Directory and DHCP services.
-- Configure and test a site-to-site IPsec VPN.
-- Validate connectivity, security policies and failover behaviour.
-- Document configurations, testing evidence and troubleshooting scenarios.
+- Design a realistic enterprise HQ and Branch network
+- Implement VLAN-based segmentation
+- Configure secure HQ and Branch connectivity
+- Deploy FortiGate firewall High Availability
+- Configure site-to-site IPsec VPN
+- Build redundant switching paths
+- Integrate external VMware-based AD/DHCP services
+- Validate routing, security policies, NAT, and failover behavior
+- Document troubleshooting cases with root cause and lessons learned
+
+---
 
 ## Current Architecture
 
-### Headquarters
+## Headquarters
 
 - Two FortiGate firewalls configured as an HA pair
 - Two core switches
 - Two access switches with redundant uplinks
 - Multiple departmental VLANs
 - External VMware-based Active Directory/DHCP server
-- External Windows domain client
-- Internal test endpoint
+- Internal test endpoints
+- Firewall security zones
+- NAT and security policies
 
-### Branch
+## Branch
 
 - One FortiGate firewall
 - One core switch
@@ -41,10 +46,12 @@ The project combines enterprise switching, FortiGate high availability, VLAN seg
 - Branch test endpoints
 - Secure connectivity to headquarters through IPsec VPN
 
-## Technologies
+---
+
+## Technologies Used
 
 - EVE-NG
-- Fortinet FortiGate
+- FortiGate Firewall
 - Cisco IOS Switching
 - VLANs and IEEE 802.1Q Trunking
 - Rapid-PVST
@@ -56,33 +63,35 @@ The project combines enterprise switching, FortiGate high availability, VLAN seg
 - VMware Workstation
 - Firewall Security Policies
 - Network Address Translation
+- Network Troubleshooting
 
-## Implementation Status
+---
 
-| Component | Status |
-|---|---|
-| HQ and Branch Architecture | Implemented |
-| HQ FortiGate HA | Implemented |
-| VLAN and Trunk Configuration | Implemented — Verification in Progress |
-| Redundant Switch Connectivity | Implemented — Failover Testing Pending |
-| Branch Routed Infrastructure | Implemented |
-| Site-to-Site IPsec VPN | Implemented — Evidence Collection in Progress |
-| External AD/DHCP Connectivity | Implemented — Documentation in Progress |
-| Security Policy Validation | In Progress |
-| Final Failover Testing | Planned |
-| Monitoring and Hardening | Planned |
-| Final Documentation and Demo | Planned |
+## Repository Structure
 
-## Documentation
-
-Detailed architecture, configurations, addressing plans, verification results and troubleshooting records will be added as each project phase is validated.
-
-## Security Notice
-
-This project was created in an authorized virtual lab environment for learning, testing and professional demonstration. All addresses, configurations and credentials are lab-specific. No production credentials or confidential organizational information are included.
-
-
-
-## Troubleshooting Case Studies
-
-- [FortiGate Redundant Interface Active Member Causing Gateway Reachability Failure](troubleshooting/fortigate-redundant-interface-active-member-issue.md)
+```text
+secure-enterprise-hq-branch-network/
+│
+├── architecture/
+│   ├── device-inventory.md
+│   └── network-overview.md
+│
+├── topology/
+│   └── README.md
+│
+├── configs/
+│   └── README.md
+│
+├── implementation/
+│   └── README.md
+│
+├── screenshots/
+│   └── README.md
+│
+├── testing/
+│   └── README.md
+│
+├── troubleshooting/
+│   └── fortigate-redundant-interface-active-member-issue.md
+│
+└── README.md
