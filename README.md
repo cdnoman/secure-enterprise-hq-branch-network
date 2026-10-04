@@ -146,6 +146,6 @@ All addresses, configurations, and credentials are lab-specific. No production c
 Author
 
 Nauman Ali
-Network Engineer  
+Network | Security Engineer
 
-GitHub Profile
+[LinkedIn Profile](https://www.linkedin.com/in/nauman-ali-network/) | [GitHub Profile](https://github.com/cdnoman)
